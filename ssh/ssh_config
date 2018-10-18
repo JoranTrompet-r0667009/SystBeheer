@@ -50,6 +50,6 @@ Host *
 #   VisualHostKey no
 #   ProxyCommand ssh -q -W %h:%p gateway.example.com
 #   RekeyLimit 1G 1h
-    SendEnv LANG LC_*
+#    SendEnv LANG LC_*
     HashKnownHosts yes
     GSSAPIAuthentication yes

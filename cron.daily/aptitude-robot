@@ -1,0 +1,27 @@
+#!/bin/sh
+set -e
+
+if [ -f /etc/default/aptitude-robot ] ; then
+    . /etc/default/aptitude-robot
+else
+    :
+fi
+
+if [ "$RUN_DAILY" = "no" ]; then
+    exit
+fi
+
+run_if_executable () {
+    if [ -x "$1" ] ; then
+        "$@"
+    else
+        :
+    fi
+}
+
+run_if_executable /usr/share/aptitude-robot/random-delay $MAX_RANDOM_DELAY_SECONDS
+if [ "$SUPPRESS_CRON_MAILS" = yes ]; then
+    run_if_executable /usr/sbin/aptitude-robot-session || true
+else
+    run_if_executable /usr/sbin/aptitude-robot-session
+fi

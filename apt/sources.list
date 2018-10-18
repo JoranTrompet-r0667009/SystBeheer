@@ -4,3 +4,4 @@ deb http://ftp.debian.org/debian stretch-updates main contrib
 
 deb http://security.debian.org stretch/updates main contrib
 
+deb http://ftp.us.debian.org/debian stable main contrib

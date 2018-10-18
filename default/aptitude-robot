@@ -1,0 +1,45 @@
+# Defaults for aptitude-robot initscript
+# sourced by /etc/init.d/aptitude-robot and /usr/sbin/aptitude-robot-session
+# installed at /etc/default/aptitude-robot by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# set to "no" to prevent the daily cron run
+RUN_DAILY=yes
+# if set, delay daily cron by a random number of seconds
+# where MAX_RANDOM_DELAY_SECONDS is the maximum delay
+MAX_RANDOM_DELAY_SECONDS=900
+# set to "no" to prevent the init run at boot time
+RUN_ON_BOOT=yes
+
+# location for the session log (will be deleted after aptitude-robot has ended)
+LOG_SESSION=/var/log/aptitude-robot-session.log
+# log file to keep the output of aptitude-robot
+# this should be kept in sync with /etc/logrotate.d/aptitude-robot
+LOGFILE=/var/log/aptitude-robot.log
+
+# limit the size of files written to stop infinite loops
+MAX_LOGFILES_SIZE_BLOCKS=1000000
+
+# (optional) command to process the session log
+#SESSION_REPORT_COMMAND=/usr/share/aptitude-robot/mail-log-on-error
+#SESSION_REPORT_COMMAND=/usr/share/aptitude-robot/xymon-report
+SESSION_REPORT_COMMAND=
+
+# (optional) Don't pass through exit code to cron job
+#
+# Helpful if you want to silence mails by cron about
+# aptitude-robot-session not having exited with return code 0.
+#
+# Be sure to enable some kind of reporting with other methods if you
+# use this. This is usually done via the SESSION_REPORT_COMMAND above.
+#
+# Set to "yes" if you don't want mails by cron if
+# aptitude-robot-session exited with exit code not equal zero.
+SUPPRESS_CRON_MAILS=no
+
+# command to run at the end of aptitude-robot-session
+#POST_SESSION_HOOK="apt-get clean"
+POST_SESSION_HOOK=
