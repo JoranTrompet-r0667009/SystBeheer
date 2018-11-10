@@ -27,3 +27,4 @@ messagebus:*:17512:0:99999:7:::
 check:$6$Ofprphpx$V2pzXG6C8HA9X1Rr5cfLWYTN6NJCQ6MHxmBnuK5elQw8yf3Eua4x66OQCy6Td63L.QaDMEE9QI2kIHMqKmyed/:17821:0:99999:7:::
 ntp:*:17835:0:99999:7:::
 bind:*:17844:0:99999:7:::
+mysql:!:17845:0:99999:7:::
