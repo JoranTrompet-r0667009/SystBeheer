@@ -11,9 +11,14 @@ append_dot_mydomain = no
 
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
-mydestination = $myhostname, localhost.$mydomain, localhost
+
 relayhost = 
 mynetworks = 127.0.0.0/8
-inet_interfaces = loopback-only
+inet_interfaces = all
 recipient_delimiter = +
+inet_protocols = ipv4,ipv6 
 
+myhostname = mx.joran-trompet.sb.uclllabs.be
+myorigin = /etc/mailname
+mydestination = localhost, joran-trompet.sb.uclllabs.be, localhost.joran-trompet.sb.uclllabs.be, mx.joran-trompet.sb.uclllabs.be
+mailbox_size_limit = 0
