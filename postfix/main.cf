@@ -10,6 +10,9 @@ append_dot_mydomain = no
 #delay_warning_time = 4h
 
 
+virtual_mailbox_base = /var/vmail/
+virtual_alias_maps = hash:/etc/postfix/virtual
+
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
 
