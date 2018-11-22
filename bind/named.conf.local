@@ -15,6 +15,18 @@ allow-transfer
 193.191.176.254;
 193.191.177.254;
 193.191.177.4;
+193.191.177.221;
 };
 
 };
+
+
+zone "gill-barras.sb.uclllabs.be" {
+        type slave;
+	masterfile-format text;
+        file "/etc/bind/zones/gill-barras.sb.uclllabs.be";
+        masters { 193.191.177.221; };
+};
+
+
+
