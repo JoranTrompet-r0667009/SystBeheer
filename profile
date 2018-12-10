@@ -32,3 +32,4 @@ if [ -d /etc/profile.d ]; then
   done
   unset i
 fi
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/path/to/dir

@@ -30,3 +30,69 @@ zone "gill-barras.sb.uclllabs.be" {
 
 
 
+
+zone "subzonechi7ah.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/subzonechi7ah.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "subzonemohzu3.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/subzonemohzu3.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "laatstetest.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/laatstetest.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "subzoneeeki8a.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/subzoneeeki8a.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "subzoneom7ohf.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/subzoneom7ohf.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "helenieuwezone.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/helenieuwezone.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "testjoran.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/testjoran.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "testnieuwezone1.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/testnieuwezone1.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "subzoneohyee0.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/subzoneohyee0.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "subzone77.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/subzone77.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
+
+zone "subzone7.joran-trompet.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/zones/subzone7.joran-trompet.sb.uclllabs.be";
+   allow-transfer {193.191.177.254;193.191.177.254;193.191.177.4;193.191.177.221; };
+};
