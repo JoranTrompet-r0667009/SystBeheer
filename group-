@@ -59,3 +59,4 @@ dovecot:x:118:
 dovenull:x:119:
 otherpeeps:x:802:
 vmail:x:5000:
+ftp:x:120:

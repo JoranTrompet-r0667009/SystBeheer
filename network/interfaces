@@ -7,12 +7,10 @@ iface eth0 inet static
 	netmask 255.255.255.128
 	gateway 193.191.177.254
 
-auto he-ipv6
-iface he-ipv6 inet6 v4tunnel
-        address 2001:470:1f14:959::2
+iface eth0 inet6 static
+        address 2001:6a8:2880:a077::9e
         netmask 64
-        endpoint 216.66.84.46
-        local 193.191.177.158
-        ttl 255
-        gateway 2001:470:1f14:959::1
+        gateway 2001:6a8:2880:a077::1
+
+
 
