@@ -1,7 +1,7 @@
 $TTL	604800	
 ;$ORIGIN joran-trompet.sb.uclllabs.be
 @	IN	SOA	joran-trompet.sb.uclllabs.be. root.joran-trompet.sb.uclllabs.be. (
-			    140		; Serial
+			    150		; Serial
 			      1		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -40,3 +40,4 @@ testnieuwezone1	IN	NS	ns
 
 ns      IN      AAAA    2001:6a8:2880:a077::9e
 @       IN      AAAA    2001:6a8:2880:a077::9e
+mx	IN	AAAA	2001:6a8:2880:a077::9e
